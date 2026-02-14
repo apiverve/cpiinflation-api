@@ -1,0 +1,104 @@
+openapi: 3.0.4
+info:
+  title: CPI Inflation
+  description: >-
+    CPI Inflation provides monthly Consumer Price Index data broken down by
+    category including food, housing, transportation, medical care, and more.
+    Includes year-over-year inflation rates for each category.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.0
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+  - url: https://api.apiverve.com/
+paths:
+  /v1/cpiinflation:
+    get:
+      summary: Get CPI Inflation
+      description: Get current or historical CPI inflation data by category
+      operationId: cpiinflation
+      parameters:
+        - name: date
+          in: query
+          schema:
+            type: string
+          required: false
+          description: >-
+            Optional date in YYYY-MM format for historical lookup. Omit for
+            current data.
+          example: 2024-01
+        - name: category
+          in: query
+          schema:
+            type: string
+          required: false
+          description: >-
+            Optional category filter: all, food, housing, apparel,
+            transportation, medical, recreation, education, gasoline,
+            electricity
+          example: food
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: object
+                    description: data
+              example:
+                status: ok
+                error: null
+                data:
+                  yearMonth: 2024-01
+                  year: 2024
+                  month: 1
+                  categories:
+                    all:
+                      index: 308.417
+                      yearOverYearChange: 3.1
+                    food:
+                      index: 327.891
+                      yearOverYearChange: 2.6
+                    housing:
+                      index: 341.256
+                      yearOverYearChange: 4.8
+                    transportation:
+                      index: 278.543
+                      yearOverYearChange: 1.2
+                    medical:
+                      index: 542.189
+                      yearOverYearChange: 3.5
+                    gasoline:
+                      index: 287.654
+                      yearOverYearChange: -3.2
+                    electricity:
+                      index: 298.123
+                      yearOverYearChange: 5.1
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occurred, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+  - api_key: []
