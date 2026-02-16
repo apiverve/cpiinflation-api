@@ -44,7 +44,10 @@ from apiverve_cpiinflation.apiClient import CpiinflationAPIClient
 # Initialize the client with your APIVerve API key
 api = CpiinflationAPIClient("[YOUR_API_KEY]")
 
-query = { "date": "2024-01", "category": "food" }
+query = {
+    "date": "2024-01",
+    "category": "food"
+}
 
 try:
     # Make the API call
@@ -82,7 +85,10 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "date": "2024-01", "category": "food" }
+query = {
+    "date": "2024-01",
+    "category": "food"
+}
 ```
 
 ###### Simple Request
@@ -152,7 +158,10 @@ from apiverve_cpiinflation.apiClient import CpiinflationAPIClient, CpiinflationA
 
 api = CpiinflationAPIClient("[YOUR_API_KEY]")
 
-query = { "date": "2024-01", "category": "food" }
+query = {
+    "date": "2024-01",
+    "category": "food"
+}
 
 try:
     result = api.execute(query)
@@ -173,7 +182,10 @@ from apiverve_cpiinflation.apiClient import CpiinflationAPIClient, CpiinflationA
 
 api = CpiinflationAPIClient("[YOUR_API_KEY]")
 
-query = { "date": "2024-01", "category": "food" }
+query = {
+    "date": "2024-01",
+    "category": "food"
+}
 
 try:
     result = api.execute(query)
@@ -207,7 +219,10 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_cpiinflation.apiClient import CpiinflationAPIClient, CpiinflationAPIClientError
 
-query = { "date": "2024-01", "category": "food" }
+query = {
+    "date": "2024-01",
+    "category": "food"
+}
 
 # Using context manager ensures proper cleanup
 with CpiinflationAPIClient("[YOUR_API_KEY]") as api:
@@ -233,7 +248,10 @@ from apiverve_cpiinflation.apiClient import CpiinflationAPIClient
 # Enable debug mode
 api = CpiinflationAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "date": "2024-01", "category": "food" }
+query = {
+    "date": "2024-01",
+    "category": "food"
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -248,8 +266,12 @@ from apiverve_cpiinflation.apiClient import CpiinflationAPIClient
 
 api = CpiinflationAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "date": "2024-01",
+    "category": "food"
+}
+
 try:
-    query = { "date": "2024-01", "category": "food" }
     result = api.execute(query)
     print(result)
 finally:
