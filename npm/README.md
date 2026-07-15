@@ -60,7 +60,7 @@ Using the API is simple. All you have to do is make a request. The API will retu
 
 ```javascript
 var query = {
-  date: "2024-01",
+  date: "2023-06",
   category: "food"
 };
 
@@ -81,7 +81,7 @@ You can also use promises to make requests. The API returns a promise that you c
 
 ```javascript
 var query = {
-  date: "2024-01",
+  date: "2023-06",
   category: "food"
 };
 
@@ -103,7 +103,7 @@ You can also use async/await to make requests. The API returns a promise that yo
 ```javascript
 async function makeRequest() {
     var query = {
-  date: "2024-01",
+  date: "2023-06",
   category: "food"
 };
 
