@@ -15,7 +15,7 @@ const api = new cpiinflationAPI({
 
 // Example query
 var query = {
-  date: "2024-01",
+  date: "2023-06",
   category: "food"
 };
 
