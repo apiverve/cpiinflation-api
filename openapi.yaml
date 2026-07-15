@@ -31,7 +31,7 @@ paths:
           description: >-
             Optional date in YYYY-MM format for historical lookup. Omit for
             current data.
-          example: 2024-01
+          example: 2023-06
         - name: category
           in: query
           schema:
