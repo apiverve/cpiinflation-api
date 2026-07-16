@@ -25,6 +25,9 @@ namespace APIVerve.API.CPIInflation
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -33,10 +36,10 @@ namespace APIVerve.API.CPIInflation
         public string YearMonth { get; set; }
 
         [JsonProperty("year")]
-        public long Year { get; set; }
+        public long? Year { get; set; }
 
         [JsonProperty("month")]
-        public long Month { get; set; }
+        public long? Month { get; set; }
 
         [JsonProperty("categories")]
         public Categories Categories { get; set; }
@@ -69,9 +72,21 @@ namespace APIVerve.API.CPIInflation
     public partial class All
     {
         [JsonProperty("index")]
-        public double Index { get; set; }
+        public double? Index { get; set; }
 
         [JsonProperty("yearOverYearChange")]
-        public double YearOverYearChange { get; set; }
+        public double? YearOverYearChange { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
