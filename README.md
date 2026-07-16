@@ -192,11 +192,60 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the CPI Inflation API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "yearMonth": "2024-01",
+    "year": 2024,
+    "month": 1,
+    "categories": {
+      "all": {
+        "index": 308.417,
+        "yearOverYearChange": 3.1
+      },
+      "food": {
+        "index": 327.891,
+        "yearOverYearChange": 2.6
+      },
+      "housing": {
+        "index": 341.256,
+        "yearOverYearChange": 4.8
+      },
+      "transportation": {
+        "index": 278.543,
+        "yearOverYearChange": 1.2
+      },
+      "medical": {
+        "index": 542.189,
+        "yearOverYearChange": 3.5
+      },
+      "gasoline": {
+        "index": 287.654,
+        "yearOverYearChange": -3.2
+      },
+      "electricity": {
+        "index": 298.123,
+        "yearOverYearChange": 5.1
+      }
+    }
+  }
 }
 ```
 
