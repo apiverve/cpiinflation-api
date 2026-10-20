@@ -2,12 +2,9 @@
 
 CPI Inflation provides monthly Consumer Price Index data broken down by category including food, housing, transportation, medical care, and more. Includes year-over-year inflation rates for each category.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 [![npm version](https://img.shields.io/npm/v/@apiverve/cpiinflation.svg)](https://www.npmjs.com/package/@apiverve/cpiinflation)
 
-This is a Javascript Wrapper for the [CPI Inflation API](https://apiverve.com/marketplace/cpiinflation?utm_source=npm&utm_medium=readme)
+This is a JavaScript wrapper for the [CPI Inflation API](https://apiverve.com/marketplace/cpiinflation?utm_source=npm&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -28,15 +25,15 @@ yarn add @apiverve/cpiinflation
 ## Configuration
 
 Before using the CPI Inflation API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=npm&utm_medium=readme)
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=npm&utm_medium=referral&utm_content=readme)
 
 ---
 
 ## Quick Start
 
-[Get started with the Quick Start Guide](https://docs.apiverve.com/quickstart?utm_source=npm&utm_medium=readme)
+[Get started with the Quick Start Guide](https://docs.apiverve.com/quickstart?utm_source=npm&utm_medium=referral&utm_content=readme)
 
-The CPI Inflation API documentation is found here: [https://docs.apiverve.com/ref/cpiinflation](https://docs.apiverve.com/ref/cpiinflation?utm_source=npm&utm_medium=readme).
+The CPI Inflation API documentation is found here: [https://docs.apiverve.com/ref/cpiinflation](https://docs.apiverve.com/ref/cpiinflation?utm_source=npm&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -125,39 +122,12 @@ async function makeRequest() {
   "status": "ok",
   "error": null,
   "data": {
-    "yearMonth": "2024-01",
-    "year": 2024,
-    "month": 1,
-    "categories": {
-      "all": {
-        "index": 308.417,
-        "yearOverYearChange": 3.1
-      },
-      "food": {
-        "index": 327.891,
-        "yearOverYearChange": 2.6
-      },
-      "housing": {
-        "index": 341.256,
-        "yearOverYearChange": 4.8
-      },
-      "transportation": {
-        "index": 278.543,
-        "yearOverYearChange": 1.2
-      },
-      "medical": {
-        "index": 542.189,
-        "yearOverYearChange": 3.5
-      },
-      "gasoline": {
-        "index": 287.654,
-        "yearOverYearChange": -3.2
-      },
-      "electricity": {
-        "index": 298.123,
-        "yearOverYearChange": 5.1
-      }
-    }
+    "yearMonth": "2026-08",
+    "year": 2026,
+    "month": 8,
+    "category": "food",
+    "index": 350.418,
+    "yearOverYearChange": 2.67
   }
 }
 ```
@@ -166,7 +136,7 @@ async function makeRequest() {
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=npm&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=npm&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -178,12 +148,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=npm&utm_medium=readme), [Privacy Policy](https://apiverve.com/privacy?utm_source=npm&utm_medium=readme), and [Refund Policy](https://apiverve.com/refund?utm_source=npm&utm_medium=readme).
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=npm&utm_medium=referral&utm_content=readme) and [Privacy Policy](https://apiverve.com/privacy?utm_source=npm&utm_medium=referral&utm_content=readme).
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 

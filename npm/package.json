@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/cpiinflation",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "CPI Inflation provides monthly Consumer Price Index data broken down by category including food, housing, transportation, medical care, and more. Includes year-over-year inflation rates for each category.",
   "main": "index.js",
   "types": "index.d.ts",
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "cpi", "consumer price index", "inflation", "inflation rate", "bls data"
+    "cpi api", "inflation api", "cpi inflation api", "consumer price index api", "inflation calculator api"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/cpiinflation-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/cpiinflation?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/cpiinflation?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",

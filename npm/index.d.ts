@@ -25,23 +25,10 @@ declare module '@apiverve/cpiinflation' {
 
 
   interface CPIInflationData {
-      yearMonth:  null | string;
-      year:       number | null;
-      month:      number | null;
-      categories: Categories;
-  }
-  
-  interface Categories {
-      all:            All;
-      food:           All;
-      housing:        All;
-      transportation: All;
-      medical:        All;
-      gasoline:       All;
-      electricity:    All;
-  }
-  
-  interface All {
+      yearMonth:          null | string;
+      year:               number | null;
+      month:              number | null;
+      category:           null | string;
       index:              number | null;
       yearOverYearChange: number | null;
   }
