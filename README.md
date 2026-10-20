@@ -1,13 +1,13 @@
-# [CPI Inflation API](https://apiverve.com/marketplace/cpiinflation?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [CPI Inflation API](https://apiverve.com/marketplace/cpiinflation?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
 CPI Inflation provides monthly Consumer Price Index data broken down by category including food, housing, transportation, medical care, and more. Includes year-over-year inflation rates for each category.
 
 The CPI Inflation API provides a simple, reliable way to integrate cpi inflation functionality into your applications. Built for developers who need production-ready cpi inflation capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/cpiinflation?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/cpiinflation?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/cpiinflation?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/cpiinflation?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -162,7 +162,7 @@ go get github.com/apiverve/cpiinflation-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [CPI Inflation API](https://apiverve.com/marketplace/cpiinflation?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [CPI Inflation API](https://apiverve.com/marketplace/cpiinflation?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/cpiinflation](https://docs.apiverve.com/ref/cpiinflation)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -212,39 +212,12 @@ A real response from the CPI Inflation API:
   "status": "ok",
   "error": null,
   "data": {
-    "yearMonth": "2024-01",
-    "year": 2024,
-    "month": 1,
-    "categories": {
-      "all": {
-        "index": 308.417,
-        "yearOverYearChange": 3.1
-      },
-      "food": {
-        "index": 327.891,
-        "yearOverYearChange": 2.6
-      },
-      "housing": {
-        "index": 341.256,
-        "yearOverYearChange": 4.8
-      },
-      "transportation": {
-        "index": 278.543,
-        "yearOverYearChange": 1.2
-      },
-      "medical": {
-        "index": 542.189,
-        "yearOverYearChange": 3.5
-      },
-      "gasoline": {
-        "index": 287.654,
-        "yearOverYearChange": -3.2
-      },
-      "electricity": {
-        "index": 298.123,
-        "yearOverYearChange": 5.1
-      }
-    }
+    "yearMonth": "2026-08",
+    "year": 2026,
+    "month": 8,
+    "category": "food",
+    "index": 350.418,
+    "yearOverYearChange": 2.67
   }
 }
 ```
@@ -253,7 +226,7 @@ A real response from the CPI Inflation API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [CPI Inflation API](https://apiverve.com/marketplace/cpiinflation?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [CPI Inflation API](https://apiverve.com/marketplace/cpiinflation?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
