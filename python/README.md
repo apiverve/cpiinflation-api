@@ -3,11 +3,10 @@ CPI Inflation API
 
 CPI Inflation provides monthly Consumer Price Index data broken down by category including food, housing, transportation, medical care, and more. Includes year-over-year inflation rates for each category.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a Python API Wrapper for the [CPI Inflation API](https://apiverve.com/marketplace/cpiinflation?utm_source=pypi&utm_medium=readme)
+[![PyPI version](https://img.shields.io/pypi/v/apiverve-cpiinflation.svg)](https://pypi.org/project/apiverve-cpiinflation/)
+
+This is a Python wrapper for the [CPI Inflation API](https://apiverve.com/marketplace/cpiinflation?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -29,8 +28,8 @@ pip3 install apiverve-cpiinflation
 
 ## Configuration
 
-Before using the cpiinflation API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=readme)
+Before using the CPI Inflation API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -45,7 +44,7 @@ from apiverve_cpiinflation.apiClient import CpiinflationAPIClient
 api = CpiinflationAPIClient("[YOUR_API_KEY]")
 
 query = {
-    "date": "2024-01",
+    "date": "2023-06",
     "category": "food"
 }
 
@@ -63,7 +62,7 @@ except Exception as e:
 
 ## Usage
 
-The CPI Inflation API documentation is found here: [https://docs.apiverve.com/ref/cpiinflation](https://docs.apiverve.com/ref/cpiinflation?utm_source=pypi&utm_medium=readme).
+The CPI Inflation API documentation is found here: [https://docs.apiverve.com/ref/cpiinflation](https://docs.apiverve.com/ref/cpiinflation?utm_source=pypi&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -86,7 +85,7 @@ Using the API client, you can perform requests to the API.
 
 ```python
 query = {
-    "date": "2024-01",
+    "date": "2023-06",
     "category": "food"
 }
 ```
@@ -108,39 +107,12 @@ print(result)
   "status": "ok",
   "error": null,
   "data": {
-    "yearMonth": "2024-01",
-    "year": 2024,
-    "month": 1,
-    "categories": {
-      "all": {
-        "index": 308.417,
-        "yearOverYearChange": 3.1
-      },
-      "food": {
-        "index": 327.891,
-        "yearOverYearChange": 2.6
-      },
-      "housing": {
-        "index": 341.256,
-        "yearOverYearChange": 4.8
-      },
-      "transportation": {
-        "index": 278.543,
-        "yearOverYearChange": 1.2
-      },
-      "medical": {
-        "index": 542.189,
-        "yearOverYearChange": 3.5
-      },
-      "gasoline": {
-        "index": 287.654,
-        "yearOverYearChange": -3.2
-      },
-      "electricity": {
-        "index": 298.123,
-        "yearOverYearChange": 5.1
-      }
-    }
+    "yearMonth": "2026-08",
+    "year": 2026,
+    "month": 8,
+    "category": "food",
+    "index": 350.418,
+    "yearOverYearChange": 2.67
   }
 }
 ```
@@ -159,7 +131,7 @@ from apiverve_cpiinflation.apiClient import CpiinflationAPIClient, CpiinflationA
 api = CpiinflationAPIClient("[YOUR_API_KEY]")
 
 query = {
-    "date": "2024-01",
+    "date": "2023-06",
     "category": "food"
 }
 
@@ -183,7 +155,7 @@ from apiverve_cpiinflation.apiClient import CpiinflationAPIClient, CpiinflationA
 api = CpiinflationAPIClient("[YOUR_API_KEY]")
 
 query = {
-    "date": "2024-01",
+    "date": "2023-06",
     "category": "food"
 }
 
@@ -220,7 +192,7 @@ The client supports the context manager protocol for automatic resource cleanup:
 from apiverve_cpiinflation.apiClient import CpiinflationAPIClient, CpiinflationAPIClientError
 
 query = {
-    "date": "2024-01",
+    "date": "2023-06",
     "category": "food"
 }
 
@@ -249,7 +221,7 @@ from apiverve_cpiinflation.apiClient import CpiinflationAPIClient
 api = CpiinflationAPIClient("[YOUR_API_KEY]", debug=True)
 
 query = {
-    "date": "2024-01",
+    "date": "2023-06",
     "category": "food"
 }
 
@@ -267,7 +239,7 @@ from apiverve_cpiinflation.apiClient import CpiinflationAPIClient
 api = CpiinflationAPIClient("[YOUR_API_KEY]")
 
 query = {
-    "date": "2024-01",
+    "date": "2023-06",
     "category": "food"
 }
 
@@ -283,7 +255,7 @@ finally:
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -294,12 +266,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
