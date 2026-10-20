@@ -41,36 +41,9 @@ namespace APIVerve.API.CPIInflation
         [JsonProperty("month")]
         public long? Month { get; set; }
 
-        [JsonProperty("categories")]
-        public Categories Categories { get; set; }
-    }
+        [JsonProperty("category")]
+        public string Category { get; set; }
 
-    public partial class Categories
-    {
-        [JsonProperty("all")]
-        public All All { get; set; }
-
-        [JsonProperty("food")]
-        public All Food { get; set; }
-
-        [JsonProperty("housing")]
-        public All Housing { get; set; }
-
-        [JsonProperty("transportation")]
-        public All Transportation { get; set; }
-
-        [JsonProperty("medical")]
-        public All Medical { get; set; }
-
-        [JsonProperty("gasoline")]
-        public All Gasoline { get; set; }
-
-        [JsonProperty("electricity")]
-        public All Electricity { get; set; }
-    }
-
-    public partial class All
-    {
         [JsonProperty("index")]
         public double? Index { get; set; }
 
