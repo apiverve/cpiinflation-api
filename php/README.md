@@ -72,39 +72,12 @@ $client = new Client(
   "status": "ok",
   "error": null,
   "data": {
-    "yearMonth": "2024-01",
-    "year": 2024,
-    "month": 1,
-    "categories": {
-      "all": {
-        "index": 308.417,
-        "yearOverYearChange": 3.1
-      },
-      "food": {
-        "index": 327.891,
-        "yearOverYearChange": 2.6
-      },
-      "housing": {
-        "index": 341.256,
-        "yearOverYearChange": 4.8
-      },
-      "transportation": {
-        "index": 278.543,
-        "yearOverYearChange": 1.2
-      },
-      "medical": {
-        "index": 542.189,
-        "yearOverYearChange": 3.5
-      },
-      "gasoline": {
-        "index": 287.654,
-        "yearOverYearChange": -3.2
-      },
-      "electricity": {
-        "index": 298.123,
-        "yearOverYearChange": 5.1
-      }
-    }
+    "yearMonth": "2026-08",
+    "year": 2026,
+    "month": 8,
+    "category": "food",
+    "index": 350.418,
+    "yearOverYearChange": 2.67
   }
 }
 ```
@@ -116,11 +89,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/cpiinflation?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/cpiinflation?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/cpiinflation?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/cpiinflation?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/cpiinflation?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/cpiinflation?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License
