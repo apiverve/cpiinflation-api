@@ -1,7 +1,7 @@
 name: apiverve_cpiinflation
-description: CPI Inflation provides monthly Consumer Price Index data broken down by category including food, housing, transportation, medical care, and more. Includes year-over-year inflation rates for each category.
-version: 1.1.14
-homepage: https://apiverve.com/marketplace/cpiinflation?utm_source=dart&utm_medium=homepage
+description: "CPI Inflation provides monthly Consumer Price Index data broken down by category including food, housing, transportation, medical care, and more. Includes year-over-year inflation rates for each category."
+version: 1.2.3
+homepage: https://apiverve.com/marketplace/cpiinflation?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/cpiinflation-api/tree/main/dart
 
 environment:
