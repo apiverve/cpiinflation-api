@@ -1,6 +1,6 @@
 # CPI Inflation API - Ruby Gem
 
-CPI Inflation provides monthly Consumer Price Index data broken down by category including food, housing, transportation, medical care, and more. Includes year-over-year inflation rates for each category.
+CPI Inflation provides monthly Consumer Price Index data broken down by category including food, housing, transportation, medical care, and more. Includes year-over-year and month-over-month inflation rates for each category, with three-month changes on paid plans.
 
 ## Installation
 
@@ -76,12 +76,14 @@ client = APIVerve::Cpiinflation::Client.new(
   "status": "ok",
   "error": null,
   "data": {
-    "yearMonth": "2026-08",
+    "yearMonth": "2026-09",
     "year": 2026,
-    "month": 8,
+    "month": 9,
     "category": "food",
-    "index": 350.418,
-    "yearOverYearChange": 2.67
+    "index": 350.905,
+    "yearOverYearChange": 2.48,
+    "monthOverMonthChange": 0.14,
+    "threeMonthChange": 0.34
   }
 }
 ```
