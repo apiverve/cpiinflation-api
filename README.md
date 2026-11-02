@@ -1,6 +1,6 @@
 # [CPI Inflation API](https://apiverve.com/marketplace/cpiinflation?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-CPI Inflation provides monthly Consumer Price Index data broken down by category including food, housing, transportation, medical care, and more. Includes year-over-year inflation rates for each category.
+CPI Inflation provides monthly Consumer Price Index data broken down by category including food, housing, transportation, medical care, and more. Includes year-over-year and month-over-month inflation rates for each category, with three-month changes on paid plans.
 
 The CPI Inflation API provides a simple, reliable way to integrate cpi inflation functionality into your applications. Built for developers who need production-ready cpi inflation capabilities without the complexity of building from scratch.
 
@@ -212,12 +212,14 @@ A real response from the CPI Inflation API:
   "status": "ok",
   "error": null,
   "data": {
-    "yearMonth": "2026-08",
+    "yearMonth": "2026-09",
     "year": 2026,
-    "month": 8,
+    "month": 9,
     "category": "food",
-    "index": 350.418,
-    "yearOverYearChange": 2.67
+    "index": 350.905,
+    "yearOverYearChange": 2.48,
+    "monthOverMonthChange": 0.14,
+    "threeMonthChange": 0.34
   }
 }
 ```
