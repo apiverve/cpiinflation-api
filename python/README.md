@@ -1,7 +1,7 @@
 CPI Inflation API
 ============
 
-CPI Inflation provides monthly Consumer Price Index data broken down by category including food, housing, transportation, medical care, and more. Includes year-over-year inflation rates for each category.
+CPI Inflation provides monthly Consumer Price Index data broken down by category including food, housing, transportation, medical care, and more. Includes year-over-year and month-over-month inflation rates for each category, with three-month changes on paid plans.
 
 
 [![PyPI version](https://img.shields.io/pypi/v/apiverve-cpiinflation.svg)](https://pypi.org/project/apiverve-cpiinflation/)
@@ -107,12 +107,14 @@ print(result)
   "status": "ok",
   "error": null,
   "data": {
-    "yearMonth": "2026-08",
+    "yearMonth": "2026-09",
     "year": 2026,
-    "month": 8,
+    "month": 9,
     "category": "food",
-    "index": 350.418,
-    "yearOverYearChange": 2.67
+    "index": 350.905,
+    "yearOverYearChange": 2.48,
+    "monthOverMonthChange": 0.14,
+    "threeMonthChange": 0.34
   }
 }
 ```

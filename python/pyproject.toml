@@ -1,10 +1,10 @@
 [project]
 name = "apiverve-cpiinflation"
-version = "1.2.3"
+version = "1.2.4"
 authors = [
   { name="APIVerve", email="hello@apiverve.com" },
 ]
-description = "CPI Inflation provides monthly Consumer Price Index data broken down by category including food, housing, transportation, medical care, and more. Includes year-over-year inflation rates for each category."
+description = "CPI Inflation provides monthly Consumer Price Index data broken down by category including food, housing, transportation, medical care, and more. Includes year-over-year and month-over-month inflation rates for each category, with three-month changes on paid plans."
 keywords = ["cpi api", "inflation api", "cpi inflation api", "consumer price index api", "inflation calculator api"]
 readme = "README.md"
 requires-python = ">=3.9"
