@@ -25,12 +25,14 @@ declare module '@apiverve/cpiinflation' {
 
 
   interface CPIInflationData {
-      yearMonth:          null | string;
-      year:               number | null;
-      month:              number | null;
-      category:           null | string;
-      index:              number | null;
-      yearOverYearChange: number | null;
+      yearMonth:            null | string;
+      year:                 number | null;
+      month:                number | null;
+      category:             null | string;
+      index:                number | null;
+      yearOverYearChange:   number | null;
+      monthOverMonthChange: number | null;
+      threeMonthChange:     number | null;
   }
 
   export default class cpiinflationWrapper {
