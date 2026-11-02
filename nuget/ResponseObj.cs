@@ -49,6 +49,12 @@ namespace APIVerve.API.CPIInflation
 
         [JsonProperty("yearOverYearChange")]
         public double? YearOverYearChange { get; set; }
+
+        [JsonProperty("monthOverMonthChange")]
+        public double? MonthOverMonthChange { get; set; }
+
+        [JsonProperty("threeMonthChange")]
+        public double? ThreeMonthChange { get; set; }
     }
 
     public partial class Premium
