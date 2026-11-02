@@ -62,6 +62,8 @@ class CpiinflationData {
   String? category;
   num? index;
   num? yearOverYearChange;
+  num? monthOverMonthChange;
+  num? threeMonthChange;
 
   CpiinflationData({
     this.yearMonth,
@@ -70,6 +72,8 @@ class CpiinflationData {
     this.category,
     this.index,
     this.yearOverYearChange,
+    this.monthOverMonthChange,
+    this.threeMonthChange,
   });
 
   factory CpiinflationData.fromJson(Map<String, dynamic> json) => CpiinflationData(
@@ -79,6 +83,8 @@ class CpiinflationData {
       category: json['category'],
       index: json['index'],
       yearOverYearChange: json['yearOverYearChange'],
+      monthOverMonthChange: json['monthOverMonthChange'],
+      threeMonthChange: json['threeMonthChange'],
     );
 }
 

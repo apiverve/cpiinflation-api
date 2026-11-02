@@ -1,6 +1,6 @@
 # CPI Inflation API - Dart/Flutter Client
 
-CPI Inflation provides monthly Consumer Price Index data broken down by category including food, housing, transportation, medical care, and more. Includes year-over-year inflation rates for each category.
+CPI Inflation provides monthly Consumer Price Index data broken down by category including food, housing, transportation, medical care, and more. Includes year-over-year and month-over-month inflation rates for each category, with three-month changes on paid plans.
 
 [![pub package](https://img.shields.io/pub/v/apiverve_cpiinflation.svg)](https://pub.dev/packages/apiverve_cpiinflation)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_cpiinflation: ^1.2.3
+  apiverve_cpiinflation: ^1.2.4
 ```
 
 Then run:
@@ -53,12 +53,14 @@ void main() async {
   "status": "ok",
   "error": null,
   "data": {
-    "yearMonth": "2026-08",
+    "yearMonth": "2026-09",
     "year": 2026,
-    "month": 8,
+    "month": 9,
     "category": "food",
-    "index": 350.418,
-    "yearOverYearChange": 2.67
+    "index": 350.905,
+    "yearOverYearChange": 2.48,
+    "monthOverMonthChange": 0.14,
+    "threeMonthChange": 0.34
   }
 }
 ```

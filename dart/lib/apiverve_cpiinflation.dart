@@ -1,6 +1,6 @@
 /// CPI Inflation API client for Dart/Flutter
 ///
-/// CPI Inflation provides monthly Consumer Price Index data broken down by category including food, housing, transportation, medical care, and more. Includes year-over-year inflation rates for each category.
+/// CPI Inflation provides monthly Consumer Price Index data broken down by category including food, housing, transportation, medical care, and more. Includes year-over-year and month-over-month inflation rates for each category, with three-month changes on paid plans.
 ///
 /// For more information, visit: https://apiverve.com/marketplace/cpiinflation?utm_source=dart&utm_medium=referral&utm_content=readme
 library apiverve_cpiinflation;
