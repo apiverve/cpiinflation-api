@@ -50,7 +50,7 @@ final _formatPatterns = {
 ///
 /// Parameters:
 /// * [date] - Optional date in YYYY-MM format for historical lookup. Omit for current data. [format: date]
-/// * [category] - Optional category filter: all, food, housing, apparel, transportation, medical, recreation, education, gasoline, electricity
+/// * [category] - Optional category filter: all, food, housing, apparel, transportation, medical, recreation, education, gasoline, electricity. category=all also returns the figures under categories.all, which every plan can read
 class CpiinflationClient {
   final String apiKey;
   final String baseUrl;
