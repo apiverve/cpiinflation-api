@@ -17,7 +17,7 @@ namespace APIVerve.API.CPIInflation
         public string Date { get; set; }
 
         /// <summary>
-        /// Optional category filter: all, food, housing, apparel, transportation, medical, recreation, education, gasoline, electricity
+        /// Optional category filter: all, food, housing, apparel, transportation, medical, recreation, education, gasoline, electricity. category=all also returns the figures under categories.all, which every plan can read
         /// </summary>
         [JsonProperty("category")]
         public string Category { get; set; }
