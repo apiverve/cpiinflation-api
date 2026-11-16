@@ -43,7 +43,8 @@ paths:
           description: >-
             Optional category filter: all, food, housing, apparel,
             transportation, medical, recreation, education, gasoline,
-            electricity
+            electricity. category=all also returns the figures under
+            categories.all, which every plan can read
           example: food
       responses:
         '200':
